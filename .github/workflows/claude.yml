@@ -45,8 +45,7 @@ jobs:
           additional_permissions: |
             actions: read
 
-          allowed_tools: 'Bash,Write,Edit,Read'
-          claude_args: '--allowedPrompts Bash(*)'
+          claude_args: '--allowedTools Bash,Write,Edit,Read --allowedPrompts Bash(*)'
 
           # Optional: Give a custom prompt to Claude. If this is not specified, Claude will perform the instructions specified in the comment that tagged it.
           # prompt: 'Update the pull request description to include a summary of changes.'
